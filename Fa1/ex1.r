@@ -7,7 +7,7 @@ sigma = cov(y)
 
 
 ## Principal Components Methods
-rm(list=ls(all=TRUE))
+
 
 sigma=matrix(c(1,0.9,0.7,0.9,1,0.4,0.7,0.4,1),nrow=3)
 eigen.all = eigen(sigma)
@@ -19,7 +19,7 @@ Psi = diag(sigma - Q1 %*% t(Q1)) # variance of residuals
 sum((sigma - (Q1 %*% t(Q1) + diag(Psi)))^2) 
 
 ## Principal Factors 
-rm(list=ls(all=TRUE))
+
 
 # sigma=matrix(c(1,0.9,0.7,0.9,1,0.4,0.7,0.4,1),nrow=3)
 
